@@ -101,7 +101,7 @@
 
         <form id="visitorForm">
 
-            <!-- 1 -->
+            <!-- 1. SHAXSIY MA'LUMOTLAR -->
             <div class="form-section">
                 <div class="step">
                     <span>01</span>
@@ -114,43 +114,43 @@
                 <div class="form-grid">
                     <div class="field">
                         <label for="fullName">Ism va familiya *</label>
-                        <input type="text" id="fullName"
+                        <input type="text" id="fullName" name="name"
                                placeholder="Masalan: John Smith" required>
                     </div>
 
                     <div class="field">
                         <label for="country">Mamlakat *</label>
-                        <input type="text" id="country"
+                        <input type="text" id="country" name="country"
                                placeholder="Masalan: AQSh" required>
                     </div>
 
                     <div class="field">
                         <label for="organization">Universitet yoki tashkilot *</label>
-                        <input type="text" id="organization"
+                        <input type="text" id="organization" name="organization"
                                placeholder="Tashkilot nomi" required>
                     </div>
 
                     <div class="field">
                         <label for="position">Ilmiy darajasi / lavozimi *</label>
-                        <input type="text" id="position"
+                        <input type="text" id="position" name="position"
                                placeholder="Masalan: Professor" required>
                     </div>
 
                     <div class="field">
                         <label for="email">Elektron pochta</label>
-                        <input type="email" id="email"
+                        <input type="email" id="email" name="email"
                                placeholder="example@gmail.com">
                     </div>
 
                     <div class="field">
                         <label for="phone">Telefon raqami *</label>
-                        <input type="tel" id="phone"
+                        <input type="tel" id="phone" name="phone"
                                placeholder="+998 ..." required>
                     </div>
                 </div>
             </div>
 
-            <!-- 2 -->
+            <!-- 2. KELISH MA'LUMOTLARI -->
             <div class="form-section">
                 <div class="step">
                     <span>02</span>
@@ -163,17 +163,17 @@
                 <div class="form-grid">
                     <div class="field">
                         <label for="arrivalDate">Kelish sanasi *</label>
-                        <input type="date" id="arrivalDate" required>
+                        <input type="date" id="arrivalDate" name="arrivalDate" required>
                     </div>
 
                     <div class="field">
                         <label for="arrivalTime">Kelish vaqti *</label>
-                        <input type="time" id="arrivalTime" required>
+                        <input type="time" id="arrivalTime" name="arrivalTime" required>
                     </div>
 
                     <div class="field">
                         <label for="arrivalPlace">Kelish joyi *</label>
-                        <select id="arrivalPlace" required>
+                        <select id="arrivalPlace" name="arrivalPlace" required>
                             <option value="">Joyni tanlang</option>
                             <option>Samarqand aeroporti</option>
                             <option>Samarqand temir yo‘l vokzali</option>
@@ -184,7 +184,7 @@
 
                     <div class="field">
                         <label for="transport">Transport turi *</label>
-                        <select id="transport" required>
+                        <select id="transport" name="transport" required>
                             <option value="">Transportni tanlang</option>
                             <option>Universitet avtomobili</option>
                             <option>Taksi</option>
@@ -195,19 +195,19 @@
 
                     <div class="field">
                         <label for="guests">Mehmonlar soni *</label>
-                        <input type="number" id="guests"
+                        <input type="number" id="guests" name="guests"
                                min="1" max="100" value="1" required>
                     </div>
 
                     <div class="field">
                         <label for="flightNumber">Reys yoki poyezd raqami</label>
-                        <input type="text" id="flightNumber"
+                        <input type="text" id="flightNumber" name="flightNumber"
                                placeholder="Masalan: HY-102">
                     </div>
                 </div>
             </div>
 
-            <!-- 3 -->
+            <!-- 3. OVQATLANISH -->
             <div class="form-section">
                 <div class="step">
                     <span>03</span>
@@ -220,7 +220,7 @@
                 <div class="form-grid">
                     <div class="field">
                         <label for="food">Taom turi *</label>
-                        <select id="food" required>
+                        <select id="food" name="food" required>
                             <option value="">Taom turini tanlang</option>
                             <option>O‘zbek milliy taomlari</option>
                             <option>Yevropa taomlari</option>
@@ -232,13 +232,13 @@
 
                     <div class="field">
                         <label for="foodNotes">Maxsus ovqatlanish talablari</label>
-                        <input type="text" id="foodNotes"
+                        <input type="text" id="foodNotes" name="foodNotes"
                                placeholder="Allergiya yoki boshqa talablar">
                     </div>
                 </div>
             </div>
 
-            <!-- 4 -->
+            <!-- 4. KETISH VA TURAR JOY -->
             <div class="form-section">
                 <div class="step">
                     <span>04</span>
@@ -251,17 +251,17 @@
                 <div class="form-grid">
                     <div class="field">
                         <label for="departureDate">Ketish sanasi *</label>
-                        <input type="date" id="departureDate" required>
+                        <input type="date" id="departureDate" name="departureDate" required>
                     </div>
 
                     <div class="field">
                         <label for="departureTime">Ketish vaqti *</label>
-                        <input type="time" id="departureTime" required>
+                        <input type="time" id="departureTime" name="departureTime" required>
                     </div>
 
                     <div class="field">
                         <label for="hotel">Turar joy kerakmi?</label>
-                        <select id="hotel">
+                        <select id="hotel" name="hotel">
                             <option value="">Tanlang</option>
                             <option>Ha, mehmonxona kerak</option>
                             <option>Yo‘q, kerak emas</option>
@@ -270,7 +270,7 @@
 
                     <div class="field">
                         <label for="roomType">Xona turi</label>
-                        <select id="roomType">
+                        <select id="roomType" name="roomType">
                             <option value="">Xona turini tanlang</option>
                             <option>Bir kishilik xona</option>
                             <option>Ikki kishilik xona</option>
@@ -280,7 +280,7 @@
                 </div>
             </div>
 
-            <!-- 5 -->
+            <!-- 5. QO'SHIMCHA MA'LUMOTLAR -->
             <div class="form-section">
                 <div class="step">
                     <span>05</span>
@@ -292,7 +292,7 @@
 
                 <div class="field">
                     <label for="notes">Qo‘shimcha izohlar</label>
-                    <textarea id="notes" rows="5"
+                    <textarea id="notes" name="notes" rows="5"
                         placeholder="Qo‘shimcha talablar, izohlar..."></textarea>
                 </div>
 
