@@ -1,0 +1,592 @@
+
+/* =========================
+   1. UMUMIY SOZLAMALAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fc;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* =========================
+   2. HEADER
+========================= */
+
+.header {
+    width: 100%;
+    min-height: 85px;
+    padding: 15px 7%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: #eaf0ff;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+}
+
+.logo h2 {
+    color: #102c58;
+    font-size: 19px;
+}
+
+.logo p {
+    color: #7b8799;
+    font-size: 12px;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    color: #43536b;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #2563eb;
+}
+
+.nav-btn {
+    background: #173b73;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #2563eb;
+}
+
+/* =========================
+   3. BOSH SAHIFA
+========================= */
+
+.hero {
+    min-height: 520px;
+    padding: 90px 8%;
+    background: linear-gradient(120deg, #102b55, #1e4b88);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tag {
+    display: inline-block;
+    color: #7daeff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero-content > p {
+    max-width: 620px;
+    color: #d6e2f5;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #173b73;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #dce8ff;
+    transform: translateY(-3px);
+}
+
+.hero-card {
+    min-width: 230px;
+    max-width: 270px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.hero-card-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero-card h3 {
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #d6e2f5;
+    font-size: 14px;
+}
+
+/* =========================
+   4. BO'LIM SARLAVHALARI
+========================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    color: #102b55;
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.section-title p {
+    color: #77849a;
+    font-size: 15px;
+}
+
+/* =========================
+   5. IMKONIYATLAR
+========================= */
+
+.information {
+    padding: 85px 8%;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(25, 50, 90, 0.06);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(25, 50, 90, 0.12);
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    color: #173b73;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #7b8799;
+    font-size: 14px;
+}
+
+/* =========================
+   6. ANKETA
+========================= */
+
+.registration {
+    padding: 85px 8%;
+    background: #edf2fa;
+}
+
+#visitorForm {
+    max-width: 950px;
+    margin: auto;
+}
+
+.form-section {
+    background: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(25, 50, 90, 0.05);
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e8edf5;
+}
+
+.step > span {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: #eaf1ff;
+    color: #1e4b88;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: #173b73;
+    font-size: 20px;
+}
+
+.step p {
+    color: #8995a8;
+    font-size: 13px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.field label {
+    color: #334563;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dce3ee;
+    border-radius: 8px;
+    background: #fbfcff;
+    color: #243650;
+    outline: none;
+    transition: 0.3s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #3478d4;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(52, 120, 212, 0.1);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: #a5afbd;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.agree {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #52627a;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.agree input {
+    width: 17px;
+    height: 17px;
+    accent-color: #1e4b88;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: #173b73;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+#formMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =========================
+   7. TIZIM HAQIDA
+========================= */
+
+.about {
+    padding: 85px 8%;
+    background: #102b55;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about .tag {
+    color: #8cb8ff;
+}
+
+.about h2 {
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.about > p {
+    color: #d2def0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* =========================
+   8. ALOQA
+========================= */
+
+.contact {
+    padding: 85px 8%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.contact-card {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(25, 50, 90, 0.06);
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: #173b73;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #77849a;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   9. FOOTER
+========================= */
+
+.footer {
+    padding: 35px 20px;
+    background: #0b1e3a;
+    color: white;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.footer p {
+    color: #aebed6;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+/* =========================
+   10. TELEFON UCHUN
+========================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 15px 4%;
+        flex-wrap: wrap;
+    }
+
+    .header nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .information,
+    .registration,
+    .contact {
+        padding: 65px 5%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        justify-content: center;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .nav-btn {
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+
+    .header nav {
+        gap: 12px;
+    }
+
+    .header nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .form-section {
+        padding: 22px 17px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .step h3 {
+        font-size: 17px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 65px 6%;
+    }
+
+    .about h2 {
+        font-size: 27px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
