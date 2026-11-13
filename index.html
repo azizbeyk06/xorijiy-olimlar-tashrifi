@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xorijiy olimlar tashrifi | Universitet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">🎓</div>
+            <div>
+                <h2>UNIVERSITET</h2>
+                <p>Xalqaro hamkorlik bo‘limi</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Bosh sahifa</a>
+            <a href="#registration">Anketa</a>
+            <a href="#about">Tizim haqida</a>
+            <a href="#contact">Aloqa</a>
+        </nav>
+
+        <a href="#registration" class="nav-btn">Tashrifni rejalashtirish</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">XALQARO ILMIY HAMKORLIK</span>
+
+            <h1>Xorijiy olimlarni kutib olish va tashrifini tashkil etish</h1>
+
+            <p>
+                Universitetimizga tashrif buyuruvchi xorijiy olimlar
+                haqidagi ma’lumotlarni oldindan yig‘ish, transport,
+                yashash va ovqatlanish xizmatlarini rejalashtirish tizimi.
+            </p>
+
+            <a href="#registration" class="main-btn">
+                Anketani to‘ldirish →
+            </a>
+        </div>
+
+        <div class="hero-card">
+            <div class="hero-card-icon">🌍</div>
+            <h3>Xalqaro mehmonlar</h3>
+            <p>Har bir tashrifni qulay va samarali tashkil etamiz.</p>
+        </div>
+    </section>
+
+    <!-- INFORMATION -->
+    <section class="information">
+        <div class="section-title">
+            <span>IMKONIYATLAR</span>
+            <h2>Tashrifni tashkil etish</h2>
+            <p>Mehmonlarni kutib olish uchun barcha zarur xizmatlar.</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="card-icon">👨‍🔬</div>
+                <h3>Olim haqida</h3>
+                <p>Ism-familiya, mamlakat, universitet va ilmiy daraja.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">🚘</div>
+                <h3>Transport</h3>
+                <p>Aeroport yoki vokzaldan kutib olish xizmatlari.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">🏨</div>
+                <h3>Turar joy</h3>
+                <p>Mehmonlar uchun mehmonxona va yashash sharoitlari.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">🍽️</div>
+                <h3>Ovqatlanish</h3>
+                <p>Taom turi va maxsus ovqatlanish talablarini aniqlash.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section class="registration" id="registration">
+
+        <div class="section-title">
+            <span>ONLAYN ANKETA</span>
+            <h2>Xorijiy olim tashrifi uchun anketa</h2>
+            <p>Iltimos, quyidagi ma’lumotlarni to‘liq kiriting.</p>
+        </div>
+
+        <form id="visitorForm">
+
+            <!-- 1 -->
+            <div class="form-section">
+                <div class="step">
+                    <span>01</span>
+                    <div>
+                        <h3>Shaxsiy ma’lumotlar</h3>
+                        <p>Tashrif buyuruvchi olim haqida ma’lumot.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="fullName">Ism va familiya *</label>
+                        <input type="text" id="fullName"
+                               placeholder="Masalan: John Smith" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="country">Mamlakat *</label>
+                        <input type="text" id="country"
+                               placeholder="Masalan: AQSh" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="organization">Universitet yoki tashkilot *</label>
+                        <input type="text" id="organization"
+                               placeholder="Tashkilot nomi" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="position">Ilmiy darajasi / lavozimi *</label>
+                        <input type="text" id="position"
+                               placeholder="Masalan: Professor" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Elektron pochta</label>
+                        <input type="email" id="email"
+                               placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Telefon raqami *</label>
+                        <input type="tel" id="phone"
+                               placeholder="+998 ..." required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="form-section">
+                <div class="step">
+                    <span>02</span>
+                    <div>
+                        <h3>Kelish ma’lumotlari</h3>
+                        <p>Olimning kelish sanasi va kutib olish tafsilotlari.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="arrivalDate">Kelish sanasi *</label>
+                        <input type="date" id="arrivalDate" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="arrivalTime">Kelish vaqti *</label>
+                        <input type="time" id="arrivalTime" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="arrivalPlace">Kelish joyi *</label>
+                        <select id="arrivalPlace" required>
+                            <option value="">Joyni tanlang</option>
+                            <option>Samarqand aeroporti</option>
+                            <option>Samarqand temir yo‘l vokzali</option>
+                            <option>Universitet</option>
+                            <option>Boshqa joy</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="transport">Transport turi *</label>
+                        <select id="transport" required>
+                            <option value="">Transportni tanlang</option>
+                            <option>Universitet avtomobili</option>
+                            <option>Taksi</option>
+                            <option>Mikroavtobus</option>
+                            <option>Transport kerak emas</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="guests">Mehmonlar soni *</label>
+                        <input type="number" id="guests"
+                               min="1" max="100" value="1" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="flightNumber">Reys yoki poyezd raqami</label>
+                        <input type="text" id="flightNumber"
+                               placeholder="Masalan: HY-102">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="form-section">
+                <div class="step">
+                    <span>03</span>
+                    <div>
+                        <h3>Ovqatlanish talablari</h3>
+                        <p>Mehmonning taom bo‘yicha istaklari.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="food">Taom turi *</label>
+                        <select id="food" required>
+                            <option value="">Taom turini tanlang</option>
+                            <option>O‘zbek milliy taomlari</option>
+                            <option>Yevropa taomlari</option>
+                            <option>Vegetarian taomlar</option>
+                            <option>Halol taomlar</option>
+                            <option>Maxsus parhez</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="foodNotes">Maxsus ovqatlanish talablari</label>
+                        <input type="text" id="foodNotes"
+                               placeholder="Allergiya yoki boshqa talablar">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="form-section">
+                <div class="step">
+                    <span>04</span>
+                    <div>
+                        <h3>Ketish va turar joy</h3>
+                        <p>Mehmonning ketish vaqti va yashash sharoitlari.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="departureDate">Ketish sanasi *</label>
+                        <input type="date" id="departureDate" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="departureTime">Ketish vaqti *</label>
+                        <input type="time" id="departureTime" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="hotel">Turar joy kerakmi?</label>
+                        <select id="hotel">
+                            <option value="">Tanlang</option>
+                            <option>Ha, mehmonxona kerak</option>
+                            <option>Yo‘q, kerak emas</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="roomType">Xona turi</label>
+                        <select id="roomType">
+                            <option value="">Xona turini tanlang</option>
+                            <option>Bir kishilik xona</option>
+                            <option>Ikki kishilik xona</option>
+                            <option>Lyuks xona</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="form-section">
+                <div class="step">
+                    <span>05</span>
+                    <div>
+                        <h3>Qo‘shimcha ma’lumotlar</h3>
+                        <p>Boshqa talab va izohlaringizni yozing.</p>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="notes">Qo‘shimcha izohlar</label>
+                    <textarea id="notes" rows="5"
+                        placeholder="Qo‘shimcha talablar, izohlar..."></textarea>
+                </div>
+
+                <label class="agree">
+                    <input type="checkbox" id="agreement" required>
+                    Kiritilgan ma’lumotlarning to‘g‘riligini tasdiqlayman.
+                </label>
+
+                <button type="submit" class="submit-btn">
+                    Anketani yuborish →
+                </button>
+
+                <p id="formMessage" role="status" aria-live="polite"></p>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div>
+            <span class="tag">TIZIM HAQIDA</span>
+            <h2>Xalqaro hamkorlikni yangi bosqichga olib chiqamiz</h2>
+        </div>
+
+        <p>
+            Ushbu veb-tizim universitetga tashrif buyuruvchi xorijiy
+            olimlar haqidagi ma’lumotlarni oldindan yig‘ish va
+            tashrifni samarali tashkil etish uchun ishlab chiqilgan.
+            Tizim transport, ovqatlanish, turar joy va tashrif
+            vaqtlarini rejalashtirishga yordam beradi.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <span>BIZ BILAN BOG‘LANING</span>
+            <h2>Aloqa ma’lumotlari</h2>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>📍 Manzil</h3>
+                <p>Samarqand shahri, Universitet</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>📞 Telefon</h3>
+                <p>+998 99 837 01 40</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>✉️ Elektron pochta</h3>
+                <p>Azizbeyk06@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h3>UNIVERSITET</h3>
+        <p>Xorijiy olimlar tashrifini tashkil etish veb-tizimi</p>
+        <p>© 2026 Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
