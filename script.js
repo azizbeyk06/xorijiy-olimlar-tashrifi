@@ -171,3 +171,43 @@ if (form && message) {
         button.textContent = "Anketani yuborish →";
     });
 }
+// Mehmonlar soniga qarab xona turini tanlash
+const guestsSelect = document.getElementById("guests");
+const roomTypeSelect = document.getElementById("roomType");
+const roomRecommendation = document.getElementById("roomRecommendation");
+
+if (guestsSelect && roomTypeSelect) {
+    guestsSelect.addEventListener("change", function () {
+        const guests = Number(this.value);
+
+        roomTypeSelect.innerHTML = "";
+
+        if (!guests) {
+            roomTypeSelect.innerHTML =
+                '<option value="">Avval mehmonlar sonini tanlang</option>';
+            return;
+        }
+
+        const roomTypes = [
+            { value: "Standart", text: "Standart xona (1–2 kishi)" },
+            { value: "Deluxe", text: "Deluxe xona (1–3 kishi)" },
+            { value: "Lyuks", text: "Lyuks xona (1–4 kishi)" }
+        ];
+
+        roomTypeSelect.innerHTML =
+            '<option value="">Xona turini tanlang</option>';
+
+        roomTypes.forEach(function (room) {
+            const option = document.createElement("option");
+            option.value = room.value;
+            option.textContent = room.text;
+
+            roomTypeSelect.appendChild(option);
+        });
+
+        if (roomRecommendation) {
+            roomRecommendation.textContent =
+                guests + " nafar mehmon uchun mos xona turini tanlang.";
+        }
+    });
+}
