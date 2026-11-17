@@ -20,7 +20,7 @@ if (form && message) {
                 mode: "no-cors"
             });
 
-            message.textContent = "Ariza yuborish so‘rovi jo‘natildi. Google Sheets jadvalini tekshiring.";
+            message.textContent = "Ariza yuborish so‘rovi jo‘natildi.";
             message.className = "success-message";
             message.style.display = "block";
 
