@@ -142,11 +142,70 @@
                                placeholder="example@gmail.com">
                     </div>
 
-                    <div class="field">
-                        <label for="phone">Telefon raqami *</label>
-                        <input type="tel" id="phone" name="phone"
-                               placeholder="+998 ..." required>
-                    </div>
+                  <div class="field">
+    <label for="phone">Telefon raqami *</label>
+
+    <div style="display: flex; gap: 8px;">
+        <select id="phoneCode" style="max-width: 150px;">
+            <option value="+998">🇺🇿 +998 O‘zbekiston</option>
+            <option value="+1">🇺🇸 +1 AQSh</option>
+            <option value="+44">🇬🇧 +44 Buyuk Britaniya</option>
+            <option value="+7">🇷🇺 +7 Rossiya</option>
+            <option value="+90">🇹🇷 +90 Turkiya</option>
+            <option value="+49">🇩🇪 +49 Germaniya</option>
+            <option value="+33">🇫🇷 +33 Fransiya</option>
+            <option value="+39">🇮🇹 +39 Italiya</option>
+            <option value="+34">🇪🇸 +34 Ispaniya</option>
+            <option value="+86">🇨🇳 +86 Xitoy</option>
+            <option value="+81">🇯🇵 +81 Yaponiya</option>
+            <option value="+82">🇰🇷 +82 Janubiy Koreya</option>
+            <option value="+91">🇮🇳 +91 Hindiston</option>
+            <option value="+92">🇵🇰 +92 Pokiston</option>
+            <option value="+93">🇦🇫 +93 Afg‘oniston</option>
+            <option value="+971">🇦🇪 +971 BAA</option>
+            <option value="+966">🇸🇦 +966 Saudiya Arabistoni</option>
+            <option value="+972">🇮🇱 +972 Isroil</option>
+            <option value="+20">🇪🇬 +20 Misr</option>
+            <option value="+27">🇿🇦 +27 Janubiy Afrika</option>
+            <option value="+55">🇧🇷 +55 Braziliya</option>
+            <option value="+61">🇦🇺 +61 Avstraliya</option>
+            <option value="+64">🇳🇿 +64 Yangi Zelandiya</option>
+            <option value="+65">🇸🇬 +65 Singapur</option>
+            <option value="+66">🇹🇭 +66 Tailand</option>
+            <option value="+84">🇻🇳 +84 Vetnam</option>
+            <option value="+98">🇮🇷 +98 Eron</option>
+            <option value="+994">🇦🇿 +994 Ozarbayjon</option>
+            <option value="+995">🇬🇪 +995 Gruziya</option>
+            <option value="+996">🇰🇬 +996 Qirg‘iziston</option>
+            <option value="+992">🇹🇯 +992 Tojikiston</option>
+            <option value="+993">🇹🇲 +993 Turkmaniston</option>
+            <option value="+380">🇺🇦 +380 Ukraina</option>
+            <option value="+48">🇵🇱 +48 Polsha</option>
+            <option value="+31">🇳🇱 +31 Niderlandiya</option>
+            <option value="+32">🇧🇪 +32 Belgiya</option>
+            <option value="+41">🇨🇭 +41 Shveytsariya</option>
+            <option value="+43">🇦🇹 +43 Avstriya</option>
+            <option value="+45">🇩🇰 +45 Daniya</option>
+            <option value="+46">🇸🇪 +46 Shvetsiya</option>
+            <option value="+47">🇳🇴 +47 Norvegiya</option>
+            <option value="+358">🇫🇮 +358 Finlyandiya</option>
+            <option value="+351">🇵🇹 +351 Portugaliya</option>
+            <option value="+30">🇬🇷 +30 Gretsiya</option>
+            <option value="+40">🇷🇴 +40 Ruminiya</option>
+            <option value="+420">🇨🇿 +420 Chexiya</option>
+            <option value="+36">🇭🇺 +36 Vengriya</option>
+            <option value="+972">🇵🇸 +972 Falastin</option>
+        </select>
+
+        <input type="tel" id="phone" name="phone"
+               placeholder="Telefon raqamini kiriting"
+               required>
+    </div>
+
+    <small style="display:block; margin-top:6px;">
+        Davlat kodini tanlang yoki raqamni qo‘lda kiriting.
+    </small>
+</div>
                 </div>
             </div>
 
@@ -219,16 +278,24 @@
 
                 <div class="form-grid">
                     <div class="field">
-                        <label for="food">Taom turi *</label>
-                        <select id="food" name="food" required>
-                            <option value="">Taom turini tanlang</option>
-                            <option>O‘zbek milliy taomlari</option>
-                            <option>Yevropa taomlari</option>
-                            <option>Vegetarian taomlar</option>
-                            <option>Halol taomlar</option>
-                            <option>Maxsus parhez</option>
-                        </select>
-                    </div>
+                        <div class="field">
+    <label for="food">Taom turi *</label>
+    <select id="food" name="food" required>
+        <option value="">Taom turini tanlang</option>
+        <option>O‘zbek milliy taomlari</option>
+        <option>Yevropa taomlari</option>
+        <option>Osiyo taomlari</option>
+        <option>Vegetarian taomlar</option>
+        <option>Vegan taomlar</option>
+        <option>Halol taomlar</option>
+        <option>Dengiz mahsulotlari</option>
+        <option>Parhez taomlari</option>
+        <option>Glutensiz taomlar</option>
+        <option>Maxsus parhez</option>
+        <option>Sharq taomlari</option>
+        <option>Fast food</option>
+    </select>
+</div>davom et
 
                     <div class="field">
                         <label for="foodNotes">Maxsus ovqatlanish talablari</label>
@@ -269,14 +336,15 @@
                     </div>
 
                     <div class="field">
-                        <label for="roomType">Xona turi</label>
-                        <select id="roomType" name="roomType">
-                            <option value="">Xona turini tanlang</option>
-                            <option>Bir kishilik xona</option>
-                            <option>Ikki kishilik xona</option>
-                            <option>Lyuks xona</option>
-                        </select>
-                    </div>
+    <label for="roomType">Xona turi</label>
+    <select id="roomType" name="roomType">
+        <option value="">Avval mehmonlar sonini tanlang</option>
+    </select>
+
+    <small id="roomRecommendation"
+           style="display:block; margin-top:6px;">
+    </small>
+</div>
                 </div>
             </div>
 
