@@ -142,70 +142,86 @@
                                placeholder="example@gmail.com">
                     </div>
 
-                  <div class="field">
+                 
+<div class="field">
     <label for="phone">Telefon raqami *</label>
 
     <div style="display: flex; gap: 8px;">
-        <select id="phoneCode" style="max-width: 150px;">
-            <option value="+998">🇺🇿 +998 O‘zbekiston</option>
-            <option value="+1">🇺🇸 +1 AQSh</option>
-            <option value="+44">🇬🇧 +44 Buyuk Britaniya</option>
-            <option value="+7">🇷🇺 +7 Rossiya</option>
-            <option value="+90">🇹🇷 +90 Turkiya</option>
-            <option value="+49">🇩🇪 +49 Germaniya</option>
-            <option value="+33">🇫🇷 +33 Fransiya</option>
-            <option value="+39">🇮🇹 +39 Italiya</option>
-            <option value="+34">🇪🇸 +34 Ispaniya</option>
-            <option value="+86">🇨🇳 +86 Xitoy</option>
-            <option value="+81">🇯🇵 +81 Yaponiya</option>
-            <option value="+82">🇰🇷 +82 Janubiy Koreya</option>
-            <option value="+91">🇮🇳 +91 Hindiston</option>
-            <option value="+92">🇵🇰 +92 Pokiston</option>
-            <option value="+93">🇦🇫 +93 Afg‘oniston</option>
-            <option value="+971">🇦🇪 +971 BAA</option>
-            <option value="+966">🇸🇦 +966 Saudiya Arabistoni</option>
-            <option value="+972">🇮🇱 +972 Isroil</option>
-            <option value="+20">🇪🇬 +20 Misr</option>
-            <option value="+27">🇿🇦 +27 Janubiy Afrika</option>
-            <option value="+55">🇧🇷 +55 Braziliya</option>
-            <option value="+61">🇦🇺 +61 Avstraliya</option>
-            <option value="+64">🇳🇿 +64 Yangi Zelandiya</option>
-            <option value="+65">🇸🇬 +65 Singapur</option>
-            <option value="+66">🇹🇭 +66 Tailand</option>
-            <option value="+84">🇻🇳 +84 Vetnam</option>
-            <option value="+98">🇮🇷 +98 Eron</option>
-            <option value="+994">🇦🇿 +994 Ozarbayjon</option>
-            <option value="+995">🇬🇪 +995 Gruziya</option>
-            <option value="+996">🇰🇬 +996 Qirg‘iziston</option>
-            <option value="+992">🇹🇯 +992 Tojikiston</option>
-            <option value="+993">🇹🇲 +993 Turkmaniston</option>
-            <option value="+380">🇺🇦 +380 Ukraina</option>
-            <option value="+48">🇵🇱 +48 Polsha</option>
-            <option value="+31">🇳🇱 +31 Niderlandiya</option>
-            <option value="+32">🇧🇪 +32 Belgiya</option>
-            <option value="+41">🇨🇭 +41 Shveytsariya</option>
-            <option value="+43">🇦🇹 +43 Avstriya</option>
-            <option value="+45">🇩🇰 +45 Daniya</option>
-            <option value="+46">🇸🇪 +46 Shvetsiya</option>
-            <option value="+47">🇳🇴 +47 Norvegiya</option>
-            <option value="+358">🇫🇮 +358 Finlyandiya</option>
-            <option value="+351">🇵🇹 +351 Portugaliya</option>
-            <option value="+30">🇬🇷 +30 Gretsiya</option>
-            <option value="+40">🇷🇴 +40 Ruminiya</option>
-            <option value="+420">🇨🇿 +420 Chexiya</option>
-            <option value="+36">🇭🇺 +36 Vengriya</option>
-            <option value="+972">🇵🇸 +972 Falastin</option>
-        </select>
+        <input
+            type="text"
+            id="phoneCode"
+            list="countryCodes"
+            value="+998"
+            placeholder="+998"
+            style="max-width: 150px;"
+            required
+        >
 
-        <input type="tel" id="phone" name="phone"
-               placeholder="Telefon raqamini kiriting"
-               required>
+        <datalist id="countryCodes">
+            <option value="+998" label="O‘zbekiston">
+            <option value="+1" label="AQSh">
+            <option value="+44" label="Buyuk Britaniya">
+            <option value="+7" label="Rossiya">
+            <option value="+90" label="Turkiya">
+            <option value="+49" label="Germaniya">
+            <option value="+33" label="Fransiya">
+            <option value="+39" label="Italiya">
+            <option value="+34" label="Ispaniya">
+            <option value="+86" label="Xitoy">
+            <option value="+81" label="Yaponiya">
+            <option value="+82" label="Janubiy Koreya">
+            <option value="+91" label="Hindiston">
+            <option value="+92" label="Pokiston">
+            <option value="+93" label="Afg‘oniston">
+            <option value="+971" label="BAA">
+            <option value="+966" label="Saudiya Arabistoni">
+            <option value="+972" label="Isroil">
+            <option value="+20" label="Misr">
+            <option value="+27" label="Janubiy Afrika">
+            <option value="+55" label="Braziliya">
+            <option value="+61" label="Avstraliya">
+            <option value="+64" label="Yangi Zelandiya">
+            <option value="+65" label="Singapur">
+            <option value="+66" label="Tailand">
+            <option value="+84" label="Vetnam">
+            <option value="+98" label="Eron">
+            <option value="+994" label="Ozarbayjon">
+            <option value="+995" label="Gruziya">
+            <option value="+996" label="Qirg‘iziston">
+            <option value="+992" label="Tojikiston">
+            <option value="+993" label="Turkmaniston">
+            <option value="+380" label="Ukraina">
+            <option value="+48" label="Polsha">
+            <option value="+31" label="Niderlandiya">
+            <option value="+32" label="Belgiya">
+            <option value="+41" label="Shveytsariya">
+            <option value="+43" label="Avstriya">
+            <option value="+45" label="Daniya">
+            <option value="+46" label="Shvetsiya">
+            <option value="+47" label="Norvegiya">
+            <option value="+358" label="Finlyandiya">
+            <option value="+351" label="Portugaliya">
+            <option value="+30" label="Gretsiya">
+            <option value="+40" label="Ruminiya">
+            <option value="+420" label="Chexiya">
+            <option value="+36" label="Vengriya">
+        </datalist>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Telefon raqamini kiriting"
+            inputmode="numeric"
+            required
+        >
     </div>
 
     <small style="display:block; margin-top:6px;">
-        Davlat kodini tanlang yoki raqamni qo‘lda kiriting.
+        Davlat kodini tanlang yoki qo‘lda kiriting.
     </small>
 </div>
+
                 </div>
             </div>
 
